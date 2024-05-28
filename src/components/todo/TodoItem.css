@@ -1,0 +1,103 @@
+/* src/components/todo/TodoItem.css */
+.todo-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-edit, .todo-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-input, .todo-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .todo-input {
+    font-size: 16px;
+  }
+  
+  .todo-textarea {
+    font-size: 14px;
+    resize: vertical;
+    height: 60px;
+  }
+  
+  .todo-title {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .todo-body {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .todo-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .todo-button.save {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .todo-button.save:hover {
+    background-color: #218838;
+  }
+  
+  .todo-button.cancel {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .todo-button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .todo-button.edit {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .todo-button.edit:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .todo-button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 600px) {
+    .todo-item {
+      padding: 10px;
+    }
+  
+    .todo-input, .todo-textarea, .todo-button {
+      font-size: 14px;
+    }
+  }
+  
